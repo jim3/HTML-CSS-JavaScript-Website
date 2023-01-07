@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gh.css">
+  <title>Github API Project</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-container">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+    </ul>
+  </nav>
+  
+  <section>
+    <article class="article-container">  
+  <div id="main">
+    <p style="font-weight: 900; padding-bottom:50px;">Use the search box to list the amount of repos a user has.</p>
+    <form id="repos-form">
+      <label for="github-username"></label>
+      <input id="github-username" type="text" placeholder="GitHub username">
+      <button type="submit" id="get-repos" class="btn btn-default">Get repos</button>
+    </form>
+    
+    <ul id="repos-list"></ul>
+
+  </div>
+  </article>
+  </section>
+  <script type="module" src="github-search.js"></script>
+</body>
+
+</html>

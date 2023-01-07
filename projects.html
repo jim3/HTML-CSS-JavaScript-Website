@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./styles/devibeans.min.css" />
+  <script src="highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Projects</h1>
+  </header>
+  <section>
+    <article class="article-container">
+      <p style="padding-bottom: 5px;">
+        If interested, check out a little bit about my background on the home page 👉🏻 <a href="index.html" style="color: rgba(255, 255, 0)">Home</a>
+        <br>Otherwise...
+    </p>
+      
+      <p> 
+        This particular site was create a little over 6 months ago and was mainly about html/css and a little bit of javascript. 
+      </p>
+      <p>  
+        But things have changed and my main focus now is at the following website: <a href="https://feed1.xyz" style="color: #fefe33;">https://feed1.xyz</a> As opposed to this site, 
+        the new site is all about server-side code and templating so you'll want to check out my GitHub if you want to see the code. 
+        <br>
+       git clone <a href="https://github.com/jim3" style="color: #fefe33;">https://github.com/jim3</a>
+       <br>
+      </p>
+      
+      <p>
+      I'm using the following technologies:
+        <ul>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>EJS</li>
+          <li>JavaScript</li>
+          <li>MongoDB</li>
+          <li>HTML</li>
+          <li>CSS3</li>
+        </ul>
+    </p>
+
+      
+    
+    <p>Here are a couple of client-side projects I started a while back when I was learning about how to consume API and DOM manipulation.</p>
+      
+      <p>
+        <a href="blockchair.html" style="color: rgba(255, 255, 0)" ; target="_blank">Bitcoin App</a>
+        Displays various stats about Bitcoin using <code>async</code> and <code>await</code> to fetch data from the
+        Blockchair API. Uses <code>DOM</code> manipulation to display the data and <code>setTimeout</code> to poll the
+        API every minute.
+      
+        <pre><code class="language-javascript">
+          async function getMarketPrice() {
+            try {
+              const response = await fetch(API);
+              if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`);          
+        </code></pre>
+      </p>
+
+    
+      
+      <p>
+        <a href="/github-search/github-search.html" style="color: rgba(255, 255, 0)" ; target="_blank">Github Repo Search App</a>
+        The app lists the amount of repos a user has on Github using the GitHub REST API.
+      <pre><code class="language-javascript">
+        .then((data) => {
+          const repoList = document.querySelector("#repos-list");
+          data.forEach((repo) => {
+            repoList.insertAdjacentHTML(
+              "beforeend",       
+        </code></pre>
+      </p>
+
+    </article>
+  </section>
+</body>
+
+</html>
