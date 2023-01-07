@@ -1,4 +1,6 @@
-HTML-CSS-JavaScript-Website
+```
+HTML, CSS & JavaScript Personal Website
 
-Website I built in order to learn about HTML, CSS and JavaScript. There are some client-side apps that consume
+A website I built in order to learn about HTML, CSS and JavaScript. The projects page has a couple of client-side apps that consume
 an API. I used HTML tables to display the results.
+```
