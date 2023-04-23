@@ -5,6 +5,20 @@ window.addEventListener("load", (event) => {
   getMarketPrice();
 });
 
+function currencyFormatter(number) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(number);
+}
+
+function percentageFormatter(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "percent",
+    minimumFractionDigits: 2,
+  }).format(value);
+}
+
 async function getMarketPrice() {
   try {
     const response = await fetch(API);
@@ -28,18 +42,4 @@ async function getMarketPrice() {
   } catch (error) {
     console.error(`Could not fetch data: ${error}`);
   }
-}
-
-function currencyFormatter(number) {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(number);
-}
-
-function percentageFormatter(value) {
-  return new Intl.NumberFormat("en-US", {
-    style: "percent",
-    minimumFractionDigits: 2,
-  }).format(value);
 }
